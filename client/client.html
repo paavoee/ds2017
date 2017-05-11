@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Memory Game</title>
+    <style>
+        .mg-info {
+            width: 30%;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style-type: none
+        }
+
+        h2 {
+            align-content: center
+        }
+
+        div#mg-board {
+            border:#999 1px solid;
+            width:530px;
+            height:400px;
+            padding:24px;
+            margin:10px auto;
+        }
+        div#mg-board > div {
+            float: left;
+            border:#000 1px solid;
+            width:70px;
+            height:70px;
+            float:left;
+            margin:10px;
+            padding:20px;
+            font-size:64px;
+            cursor:pointer;
+            text-align:center;
+        }
+    </style>
+    <script src="client.js" charset="UTF-8"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="mg-info">
+            <div id="connected-to-master">
+                <h2>Connection status here</h3>
+            </div>
+            <div id="players-list">
+                <h3>Connected players:</h3>
+                <ul>
+                    <li>Matti</li>
+                    <li>Pekka</li>
+                    <li>Seppo</li>
+                </ul>
+            </div>
+            <div id="current-turn">
+                Current turn: Matti
+            </div>
+        </div>
+        <div id="mg-board"></div>
+        <script>newBoard();</script>
+    </div>
+</body>
+</html>
